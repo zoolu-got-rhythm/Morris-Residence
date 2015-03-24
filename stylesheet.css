@@ -1,0 +1,165 @@
+
+*{
+font-family: 'Roboto', sans-serif;
+color:#333;
+text-align:center;
+}
+
+h1{
+	margin-bottom:40px;
+	padding:0px;
+}
+
+h3{
+	margin:10px;
+	}
+
+body{
+background:#eee;
+}
+
+#container{
+margin: 0 auto;
+width:800px;
+/*background:#fff;*/
+}
+
+#columns{
+   /* background:#ddd; */
+	width:188px;
+	height:250px;
+	float:left;
+	margin-left: 10px;
+}
+
+#picture-frame{
+	background:#fff;
+	width:165px;
+	height:175px;
+	border-radius: 20%;
+	border-bottom:2px solid #ccc;
+	padding:10px;
+	position:relative;
+}
+
+#picture-frame:hover{
+animation: flash 0.5s;
+ -webkit-animation-iteration-count: infinite;
+ animation-iteration-count: infinite;
+ cursor: pointer;
+}
+
+#frame{
+	border-top:2px solid #ccc;
+background:#eee;
+width:100%;
+height:100%;
+/*margin:10px auto;*/
+border-radius: 20%;
+overflow: hidden;
+
+/*margin:10%;*/
+
+
+}
+
+img{
+	width:100%;
+	height:100%;
+}
+
+#title-bar{
+background-color:#fff;
+/*border-bottom: 2px solid #ccc;*/
+width:100%;
+padding:5px;
+margin-top:-10px;
+margin-bottom:40px;
+
+
+
+
+
+}
+
+#hanger{
+	position: absolute;
+	top: -20px;
+	left: 80px;
+	height:30px;
+	width:30px;
+	background-color: #fff;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+
+}
+
+
+#nail{
+	background-color: #eee;
+	border-radius: 50%;
+	height:15px;
+	width:15px;
+	margin-left:7px;
+	margin-top:4px;
+	border-bottom: 2px solid #ccc;
+
+}
+
+
+@keyframes flash{
+
+50%{ border-bottom:2px solid #81d4fa;}
+
+}
+
+@-webkit-keyframes flash{ /*pre-fix*/
+
+
+}
+
+#indicators{
+   /*background:#aaa;*/
+   width:100px;
+   height:20px;
+   margin:0 auto;
+
+}
+
+
+.sub-header{
+	margin:0;
+	padding:0;
+}
+
+#banner{
+/*border:1px solid black;*/
+
+}
+
+#clear{
+	clear:both;
+}
+
+#content{
+
+
+}
+
+#phrases{
+position: relative;
+z-index: 5;
+}
+
+#speechBubble1, #speechBubble2, #speechBubble3, #speechBubble4{
+    position: absolute;
+    top:-8px;
+    left:86px;
+	 -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    background:#fff;
+    height:15px;
+    width:15px;
+    z-index:-1;
+}
