@@ -9,6 +9,7 @@
  <script src="rollout.js"> </script>
 
 
+
 </head>
 
 <body onload="init(); rollText();">
@@ -16,12 +17,15 @@
   <h1>The Morris Residence</h1>
   <!--</div>-->
   <!-- <p class="sub-header"> An ode to a family </p> -->
+
+    <div id="wallpaper">  </div>
 	<div id="container">
+
 		<div id="banner">
       <div id="columns">
-         <div id="picture-frame" onmouseover="initIndicators(); rollTextOut(1);" onmouseout="rollText();">
+         <div id="picture-frame">
            <div id="hanger"><div id="nail"> </div> </div>
-           <div id="frame"> <!-- <img src="http://www.artistli.com/wp-content/uploads/2014/08/Pablo_Picasso1.jpg" />--> </div>
+           <div id="frame">  <canvas id="face1" onmouseover="initIndicators(); rollTextOut(1);" onmouseout="rollText(); killIndicators();"> </canvas> </div>
          </div>
          <h3>Christopher</h3>
          <div id="indicators"> </div>
@@ -34,9 +38,9 @@
       </div>
 
       <div id="columns">
-         <div id="picture-frame" onmouseover="initIndicators(); rollTextOut(2);" onmouseout="rollText();">
+         <div id="picture-frame">
            <div id="hanger"><div id="nail"> </div> </div>
-           <div id="frame"> </div>
+           <div id="frame"> <canvas id="face2" onmouseover="initIndicators(); rollTextOut(1);" onmouseout="rollText(); killIndicators();"> </canvas> </div>
          </div>
          <h3>Alexander</h3>
          <div id="indicators"> </div>
@@ -49,9 +53,9 @@
       </div>
 
       <div id="columns">
-         <div id="picture-frame" onmouseover="initIndicators(); rollTextOut(3);" onmouseout="rollText();">
+         <div id="picture-frame">
            <div id="hanger"><div id="nail"> </div> </div>
-          <div id="frame"> </div>
+          <div id="frame"> <canvas id="face3" onmouseover="initIndicators(); rollTextOut(1);" onmouseout="rollText(); killIndicators();"> </canvas> </div>
          </div>
          <h3>Sian</h3>
          <div id="indicators"> </div>
@@ -64,9 +68,9 @@
       </div>
 
        <div id="columns">
-         <div id="picture-frame" onmouseover="initIndicators(); rollTextOut(4);" onmouseout="rollText();">
+         <div id="picture-frame">
            <div id="hanger"><div id="nail"> </div> </div>
-          <div id="frame"> </div>
+          <div id="frame"> <canvas id="face4" onmouseover="initIndicators(); rollTextOut(1);" onmouseout="rollText(); killIndicators();"> </canvas> </div>
          </div>
          <h3>Tricksy</h3>
          <div id="indicators"> </div>
@@ -108,7 +112,7 @@
     </div>
 
 
-
+ <script src="faces.js"> </script>
 
 </body>
 

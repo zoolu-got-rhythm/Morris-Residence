@@ -17,18 +17,20 @@ wow typing on the same line, causes abit of lag i think.
 it is quite laggy on my side, think there's 3 of us in this session
 my pc is crap aswell though so could have something to do with that.
 */
-
-
+var amount;
+var fire
 
 
 var initIndicators = function(){
-	var amount = setInterval(function() {
+
+	    amount = setInterval(function() {
 			indicators();
 		}, 600);
+	
 
 	function indicators() {
 
-		var fire = setInterval(function() {
+		fire = setInterval(function() {
 			incro();
 		}, 100);
 
@@ -39,7 +41,7 @@ var initIndicators = function(){
 
 			inc++;
 
-			//document.getElementById("count").innerHTML=collect.length;
+			
 			collect.push(inc);
 
 			var spawn = document.createElement("div"); //.setAttribute("id","imageCube");
@@ -58,7 +60,7 @@ var initIndicators = function(){
 
 				var dad = document.getElementById("indicators");
 
-				//keeps going for the length of the child divs that we're created.
+				//keeps going for the length of the child divs that we're created, then removes them.
 				while(dad.firstChild) {
 				  dad.removeChild(dad.firstChild);
 					collect.length = 0;
@@ -69,7 +71,12 @@ var initIndicators = function(){
 		};
 
 	}; //end of indicators function
+
+
+
+
 }; //< end of initIndicators...
+
 
 var killIndicators = function() { //change scope for the function to work. <here is what needs to be changed.
 	clearInterval(amount);
